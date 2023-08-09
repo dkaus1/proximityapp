@@ -77,3 +77,13 @@ To learn more about React Native, take a look at the following resources:
 - [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+
+
+# Deployment step on iOS / Enable developer mode in ios device
+1. Install xcode
+`npm install -g ios-deploy`
+2. Connect iOS Device
+`npm install`
+`npx react-native run-ios --mode=Release`
+`ios-deploy --bundle /Users/<appname>/Library/Developer/Xcode/DerivedData/ProximityApp-hgxlthqczftagpdiaekutanplduh/Build/Products/Release-iphonesimulator/ProximityApp.app --id org.deveshk.proximityapp`
+
